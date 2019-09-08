@@ -13,7 +13,7 @@ I handled connectivity and possible decoding errors by presenting alerts.
 
 The repository list is shown in a collectionView with 1 row, and each repository is represented with its name, its fullName, and the language in which it was written, in this case, Swift.
 
-Then, on repository tapped, the Detail View Controller is presented, and the product's fullName is passed in order to fetch the details, and be presented on interface.
+Then, on repository tapped, the Detail View Controller is presented, and the repository's fullName is passed in order to fetch the details, and be presented on interface.
 
 The details for each repository as well as the contributors list are fetched in Detail View Model, and, upon successful completion, data is passed to Detail View Controller through delegate pattern.
 
