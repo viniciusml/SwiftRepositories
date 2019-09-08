@@ -83,6 +83,7 @@ class RepositoryViewModel {
     
     // MARK: - Helper Functions
     
+    // Returns a Repository Item for a specific index. Used to configure cell.
     func repository(at index: Int) -> Item {
         return repositories[index]
     }

@@ -13,7 +13,6 @@ class DetailView: UIView {
     // MARK: - Properties
     
     var repositoryDetail: RepositoryDetail? {
-        
         didSet {
             guard let detail = repositoryDetail else { return }
             

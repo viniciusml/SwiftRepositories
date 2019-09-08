@@ -67,6 +67,7 @@ class ContributorCell: BaseCell {
         
         aditionsPWLabel.constrainWidth(constant: 80)
         aditionsPWLabel.textAlignment = .right
+        
         deletionsPWLabel.constrainWidth(constant: 80)
         deletionsPWLabel.textAlignment = .right
         

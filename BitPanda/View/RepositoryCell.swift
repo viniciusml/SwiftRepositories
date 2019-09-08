@@ -47,6 +47,7 @@ class RepositoryCell: BaseCell {
         fullNameLabel.adjustsFontSizeToFitWidth = true
     }
     
+    // Configures UI in cell.
     func configure(with repository: Item?) {
         
         if let item = repository {

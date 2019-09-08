@@ -40,6 +40,7 @@ class DetailViewModel {
             case .success(let repositoryDetail):
                 
                 DispatchQueue.main.async {
+                    // Inform delegate data about repository detail
                     self.detailsDelegate?.onFetchCompleted(repositoryDetail: repositoryDetail)
                 }
                 
@@ -47,6 +48,7 @@ class DetailViewModel {
                 print("Failure to fetch details:", err)
                 
                 DispatchQueue.main.async {
+                    // Inform delegate the motive of failure
                     self.detailsDelegate?.onFetchFailed(with: err.reason)
                 }
                 
@@ -58,6 +60,7 @@ class DetailViewModel {
             case .success(let contributors):
                 
                 DispatchQueue.main.async {
+                    // Inform delegate data with contributors array
                     self.detailsDelegate?.onFetchContributorsCompleted(contributors: contributors)
                 }
                 
@@ -65,6 +68,7 @@ class DetailViewModel {
                 print("Failure to fetch details:", err)
                 
                 DispatchQueue.main.async {
+                    // Inform delegate the motive of failure
                     self.detailsDelegate?.onFetchFailed(with: err.reason)
                 }
                 
