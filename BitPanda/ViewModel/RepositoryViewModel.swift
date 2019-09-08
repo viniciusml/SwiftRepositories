@@ -68,7 +68,6 @@ class RepositoryViewModel {
                     }
                     
                     self.currentPage += 1
-
                 }
             case .failure(let error):
                 
